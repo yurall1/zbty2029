@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    body {
+      font-family:'Trebuchet MS', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black
+    }
+
+     header {
+      background: #9dbde5;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    header h1{
+    font-weight: bold;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+     .one {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .one:hover { transform: scale(1.05); }
+    .one img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .page {
+      display: none;
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      font-size: 10px;
+      color: #9dbde5;
+      font-weight: bold;
+    }
+   
+    </style>
+
+  </head>
+        <body>
+
+            <header>
+            <h1>My Interests</h1>
+            </header>
+
+            <main id="home" class="page" style="display:grid;">
+
+            <div class="one" onclick="showPage('aboutme')">
+            <img src="https://i.ibb.co/zV1tLGrS/home-3.png" alt="aboutme">
+            </div>
+            
+            <div class="one" onclick="showPage('mlp')">
+            <img src="https://i.ibb.co/fG064zVZ/11.png" alt="mlp">
+            </div>
+
+            <div class="one" onclick="showPage('haikyuu')">
+            <img src="https://i.ibb.co/6KXCTrx/12.png" alt="haikyuu">
+            </div>
+
+            <div class="one" onclick="showPage('hxh')">
+            <img src="https://i.ibb.co/k2dW6mCB/13.png" alt="hxh">
+            </div>
+
+            <div class="one" onclick="showPage('musicals')">
+            <img src="https://i.ibb.co/Pv5fPZ39/14.png" alt="muscials">
+            </div>
+
+            <div class="one" onclick="showPage('games')">
+            <img src="https://i.ibb.co/B5kkLqQk/15.png" alt="games">
+            </div>
+        </main>
+        <p> Sir can you F11 it plz</p>
+        <p>credits Autunm Tan </p>
+        
+        <script>
+        function showPage(pageName) {
+            window.location.href = pageName + ".html";
+        }
+        </script>
+        </body>
+
